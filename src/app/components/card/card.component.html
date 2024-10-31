@@ -1,12 +1,11 @@
 <div class="card">
     <div class="card__title">
-        <h3>Charmander</h3>
+        <h3>{{name}}</h3>
     </div>
     <div class="card__body">
         <img src="" alt="pokemon">
     </div>
     <div class="card__stats">
-        <span class="card__stats__type">Fire</span>
-        <span class="card__stats__type">Fire</span>
+        <span *ngFor="let attributeType of attributeTypes" class="card__stats__type">{{attributeType}}</span>
     </div>    
 </div>
